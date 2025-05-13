@@ -1,0 +1,15 @@
+<h1>Привет от Rails!</h1>
+<p>
+    Сейчас <%= @time %>
+</p>
+<p>
+    Сказать <a href="/say/goodbye">до свидания</a><br>
+    Пора сказать <%= link_to 'до свидания', say_goodbye_path %>
+</p>
+
+<div>
+    <% for file in @files %>
+        filename is: <%= file %>
+        <br>
+    <% end %>
+</div>
